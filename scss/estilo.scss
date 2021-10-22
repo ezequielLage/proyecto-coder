@@ -1,0 +1,332 @@
+$color-titulo1:turquoise;
+$color-titulos: lime;
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ body{
+    background-image: linear-gradient(to bottom,  rgb(88, 80, 80), rgb(54, 143, 151));
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    color: white;
+}
+@import "header";
+
+@import "main";
+
+@import "footer";
+
+/*mobile first*/
+@media only screen and (min-width: 480px){
+    header{
+        width: 100%;
+        .ancho{
+            width: 100%;
+            .tituloConSlogan{
+                font-size: 200%;
+                h1{
+                    color:$color-titulo1;
+                    font-size: 250%;
+                }
+                .slogan{
+                    font-size: 175%;
+                }
+            }
+            .logo{
+                img{
+                    width: 40%;
+                }
+            }
+        }
+    }
+    main{
+        section{
+            div{
+                .quienesSomos{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 150%;
+                    }
+                }
+                .mision{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 150%;
+                    }
+                }
+                .vision{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 150%;
+                    }
+                }
+            }
+        }
+        .tablaDeHorarios{
+            h3{
+                font-size: 200%;
+            }
+            div{
+                .table{
+                    font-size: 125%;
+                }
+            }
+        }
+    }
+    footer{
+        font-size: 70%;
+        gap: 0px;
+        .contacto{
+            a{
+                font-size: 200%;
+            }
+            h4{
+                font-size: 200%;
+            }
+            h6{
+                font-size: 150%;
+            }
+        }
+        .seguinos{
+            h4{
+                font-size: 200%;
+            }
+            img{
+                width: 70px;
+            }
+        }
+        .encontranos{
+            h4{
+                font-size: 200%;
+            }
+            h6{
+                font-size: 150%;
+            }
+            img{
+                width: 80px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px){
+    header{
+        width: 100%;
+        .ancho{
+            width: 100%;
+            .tituloConSlogan{
+                font-size: 200%;
+                h1{
+                    color:$color-titulo1;
+                    font-size: 250%;
+                }
+                .slogan{
+                    font-size: 175%;
+                }
+            }
+            .logo{
+                img{
+                    width: 30%;
+                }
+            }
+        }
+    }
+    main{
+        section{
+            div{
+                .quienesSomos{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 150%;
+                    }
+                }
+                .mision{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 150%;
+                    }
+                }
+                .vision{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 150%;
+                    }
+                }
+            }
+        }
+        .tablaDeHorarios{
+            h3{
+                font-size: 200%;
+            }
+            div{
+                .table{
+                    font-size: 175%;
+                }
+            }
+        }
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        .contacto{
+            a{
+                font-size: 150%;
+            }
+            h4{
+                font-size: 175%;
+            }
+            h6{
+                font-size: 150%;
+            }
+        }
+        .seguinos{
+            h4{
+                font-size: 175%;
+            }
+            img{
+                width: 70px;
+            }
+        }
+        .encontranos{
+            h4{
+                font-size: 175%;
+            }
+            h6{
+                font-size: 150%;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1024px){
+    header{
+        width: 100%;
+        .ancho{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: stretch;
+            .tituloConSlogan{
+                flex-basis: 70%;
+                h1{
+                    color:$color-titulo1;
+                    font-size: 200%;
+                }
+                .slogan{
+                    font-size: 150%;
+                }
+            }
+            .logo{
+                flex-basis: 30%;
+                img{
+                    width: 40%;
+                }
+            }
+        }
+        nav div{
+            font-size: 125%;
+        }
+    }
+    main{
+        section{
+            div{
+                .quienesSomos{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 175%;
+                    }
+                }
+                .mision{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 175%;
+                    }
+                }
+                .vision{
+                    border: solid 4px cornsilk;
+                    h3{
+                        font-size: 200%;
+                    }
+                    p{
+                        font-size: 175%;
+                    }
+                }
+            }
+        }
+        .tablaDeHorarios{
+            h3{
+                font-size: 200%;
+            }
+            div{
+                .table{
+                    font-size: 175%;
+                }
+            }
+        }
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        .contacto{
+            a{
+                font-size: 150%;
+            }
+            h4{
+                font-size: 175%;
+            }
+            h6{
+                font-size: 150%;
+            }
+        }
+        .seguinos{
+            h4{
+                font-size: 175%;
+            }
+            img{
+                width: 80px;
+            }
+        }
+        .encontranos{
+            h4{
+                font-size: 175%;
+            }
+            h6{
+                font-size: 150%;
+            }
+            img{
+                width: 150px;
+            }
+        }
+    }
+}
