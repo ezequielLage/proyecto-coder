@@ -13,15 +13,15 @@
     <title>The Black Gym – Formulario de contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilopag.css">
+    <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
     <header id="top">
         <div class="ancho">
-            <div class="titulo">
+            <div class="titulopag">
                 <h1>Formulario de Contacto</h1>
             </div>
-            <div class="logo">
+            <div class="logopag">
                 <img src="../img/the-black-gym-logo.png" width="200px" alt="the black gym logo">
             </div>
         </div>
@@ -75,58 +75,58 @@
             <fieldset class="container">
                 <legend><strong>Formulario de Contacto</strong></legend>
                 <div class="row">
-                    <div class="transicion col">
+                    <div class="transicion col-sm-12 col-md-12 col-lg-5">
                         <label for="nombre">Escribe tu nombre</label>
                         <input type="text" name="nombre" placeholder="Nombre">
                     </div>
-                    <div class="transicion col">
+                    <div class="transicion col-sm-12 col-md-12 col-lg-5">
                         <label for="apellido">Escribe tu apellido</label>
                         <input type="text" name="apellido" placeholder="Apellido">
                     </div>
                 </div>
                 <br>
                 <div class="row">
-                    <div class="transicion col">
+                    <div class="transicion col-sm-12 col-md-12 col-lg-5">
                         <label for="email">Escribe tu email *</label>
                         <input type="email" name="email" required placeholder="ejemplo@gmail.com">
                     </div>
                 <br>
-                    <div class="transicion col">
+                    <div class="transicion col-sm-12 col-md-12 col-lg-5">
                         <label for="password">Escribe tu password *</label>
                         <input type="password" name="password" required>
                     </div>
                 <br>
-                    <div class="col">
+                    <div class="col-sm-12 col-md-12 col-lg-5">
                         <label for="pais">Nacionalidad</label>
                         <select name="pais" id="pais">
-                            <option value="arg">Argentina</option>
-                            <option value="uruguay">Uruguay</option>
-                            <option value="peru">Peru</option>
-                            <option value="chile">Chile</option>
-                            <option value="otro">Otros</option>
+                            <option class="paises" value="arg">Argentina</option>
+                            <option class="paises" value="uruguay">Uruguay</option>
+                            <option class="paises" value="peru">Peru</option>
+                            <option class="paises" value="chile">Chile</option>
+                            <option class="paises" value="otro">Otros</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
                     <br>
-                    <div class="transicion col">
+                    <div class="transicion col-sm-12 col-md-12 col-lg-5">
                         <label for="fechanac">Fecha de nacimiento</label>
                         <input type="date" name="fechanac">
                     </div>
                     <br>
-                    <div class="col">
-                        <label for="sexo">Selecciona tu sexo</label>
+                    <div class="col-sm-12 col-md-12 col-lg-5">
+                        <label for="sexo">Selecciona tu sexo</label><br>
                         <input type="radio" name="sexo" value="mujer">Femenino
                         <input type="radio" name="sexo" value="hombre">Masculino
                         <input type="radio" name="sexo" value="otro">Otro
                     </div>
                     <br>
-                    <div class="col-12">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
                         <label for="comentario" name="comentario">Deja tu mensaje</label><br>
-                        <textarea name="comentario" id="" cols="70" rows="5"></textarea>
+                        <textarea name="comentario" id=""></textarea>
                     </div>
                     <br>
-                    <div class="col-12">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
                         <label for="terminos">Acepto terminos y condiciones</label>
                         <input type="checkbox" name="terminos" required>
                     </div>
@@ -143,7 +143,7 @@
     </section>
 
     <!--aca comienza el footer-->
-    <footer class="footerForm">
+    <footer class="footerIndex">
         <div class="contacto">
            <a href="#top">Ir arriba</a>
            <h4>Contactanos:</h4>

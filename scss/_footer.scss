@@ -1,9 +1,9 @@
-footer{
+.footerIndex{
     background-color:darkslategray;
+    background-image:  url("/img/fondo6.jpg");
     font-size: 100%;
     margin: 10px;
     padding: 10px;
-    border: solid 1px cornsilk;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -39,7 +39,7 @@ footer{
             font-size: 75%;
         }
         img{
-            width: 40px;
+            width: 60px;
         }
     }
 }

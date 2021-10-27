@@ -19,7 +19,7 @@ header .ancho {
     padding-top: 10px; }
     header .ancho .tituloConSlogan h1 {
       font-size: 150%;
-      color: turquoise;
+      color: #E16A04;
       text-align: center;
       text-transform: uppercase;
       font-family: 'Vollkorn', serif; }
@@ -35,23 +35,22 @@ header .ancho {
   100% {
     opacity: 1; } }
   header .ancho .logo {
-    flex-basis: 0%;
+    flex-basis: 30%;
     padding-top: 5px;
     text-align: center; }
     header .ancho .logo img {
-      width: 40%; }
+      width: 25%; }
 
 header nav div {
   justify-content: center; }
 
-main section div {
-  justify-content: center; }
-  main section div .quienesSomos {
-    background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-    border: solid 3px cornsilk; }
-    main section div .quienesSomos h3 {
-      color: lime;
+main .textoBase {
+  background-image: url("/img/fondo1.jpg");
+  margin: 20px; }
+  main .textoBase div {
+    justify-content: center; }
+    main .textoBase div .quienesSomos h3 {
+      color: #FF7100;
       margin: 10px;
       font-size: 100%;
       text-align: center;
@@ -65,22 +64,18 @@ main section div {
   0% {
     color: white; }
   25% {
-    color: aquamarine; }
+    color: orange; }
   50% {
-    color: aqua; }
+    color: peru; }
   75% {
-    color: limegreen; } }
-    main section div .quienesSomos p {
+    color: orangered; } }
+    main .textoBase div .quienesSomos p {
       padding: 3px;
       margin: 3px;
       line-height: 2;
       font-size: 75%; }
-  main section div .mision {
-    background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-    border: solid 3px cornsilk; }
-    main section div .mision h3 {
-      color: lime;
+    main .textoBase div .mision h3 {
+      color: #FF7100;
       margin: 10px;
       font-size: 100%;
       text-align: center;
@@ -89,27 +84,13 @@ main section div {
       animation-timing-function: ease-in;
       animation-duration: 2s;
       animation-delay: 0s; }
-
-@keyframes un_efecto {
-  0% {
-    color: white; }
-  25% {
-    color: aquamarine; }
-  50% {
-    color: aqua; }
-  75% {
-    color: limegreen; } }
-    main section div .mision p {
+    main .textoBase div .mision p {
       padding: 3px;
       margin: 3px;
       line-height: 2;
       font-size: 75%; }
-  main section div .vision {
-    background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-    border: solid 3px cornsilk; }
-    main section div .vision h3 {
-      color: lime;
+    main .textoBase div .vision h3 {
+      color: #FF7100;
       margin: 10px;
       font-size: 100%;
       text-align: center;
@@ -118,27 +99,13 @@ main section div {
       animation-timing-function: ease-in;
       animation-duration: 2s;
       animation-delay: 0s; }
-
-@keyframes un_efecto {
-  0% {
-    color: white; }
-  25% {
-    color: aquamarine; }
-  50% {
-    color: aqua; }
-  75% {
-    color: limegreen; } }
-    main section div .vision p {
+    main .textoBase div .vision p {
       padding: 3px;
       margin: 3px;
       line-height: 2;
       font-size: 75%; }
 
 main .tablaDeHorarios {
-  background-color: #485461;
-  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
-  color: aliceblue;
-  border: solid 3px cornsilk;
   grid-area: tablaDeHorarios;
   line-height: 1.6;
   letter-spacing: 5px;
@@ -146,7 +113,7 @@ main .tablaDeHorarios {
   font-size: 75%;
   overflow: scroll; }
   main .tablaDeHorarios h3 {
-    color: lime;
+    color: #FF7100;
     margin: 10px;
     font-size: 100%;
     text-align: center;
@@ -155,54 +122,67 @@ main .tablaDeHorarios {
     animation-timing-function: ease-in;
     animation-duration: 2s;
     animation-delay: 0s; }
-
-@keyframes un_efecto {
-  0% {
-    color: white; }
-  25% {
-    color: aquamarine; }
-  50% {
-    color: aqua; }
-  75% {
-    color: limegreen; } }
   main .tablaDeHorarios div .table {
     padding: 5px; }
     main .tablaDeHorarios div .table .fila {
-      color: lime; }
+      color: #FF7100; }
 
-footer {
+main .diasHorarios .dias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  main .diasHorarios .dias .apertura {
+    margin: 20px;
+    background-color: black;
+    width: 30%;
+    border-radius: 25%;
+    height: auto; }
+    main .diasHorarios .dias .apertura h3 {
+      font-size: 100%;
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+      color: #FF7100; }
+    main .diasHorarios .dias .apertura p {
+      font-size: 75%;
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+      color: #FF7100; }
+
+.footerIndex {
   background-color: darkslategray;
+  background-image: url("/img/fondo6.jpg");
   font-size: 100%;
   margin: 10px;
   padding: 10px;
-  border: solid 1px cornsilk;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   gap: 2px;
   justify-items: center; }
-  footer .contacto {
+  .footerIndex .contacto {
     padding: 10px;
     margin: 10px;
     line-height: 1.5; }
-    footer .contacto h4 {
+    .footerIndex .contacto h4 {
       font-size: 100%; }
-    footer .contacto h6 {
+    .footerIndex .contacto h6 {
       font-size: 75%; }
-  footer .seguinos {
+  .footerIndex .seguinos {
     padding: 10px;
     margin: 10px;
     line-height: 1.5; }
-    footer .seguinos h4 {
+    .footerIndex .seguinos h4 {
       font-size: 100%; }
-    footer .seguinos img {
+    .footerIndex .seguinos img {
       width: 40px; }
-  footer .encontranos h4 {
+  .footerIndex .encontranos h4 {
     font-size: 100%; }
-  footer .encontranos h6 {
+  .footerIndex .encontranos h6 {
     font-size: 75%; }
-  footer .encontranos img {
-    width: 40px; }
+  .footerIndex .encontranos img {
+    width: 60px; }
 
 /*mobile first*/
 @media only screen and (min-width: 480px) {
@@ -213,52 +193,45 @@ footer {
       header .ancho .tituloConSlogan {
         font-size: 200%; }
         header .ancho .tituloConSlogan h1 {
-          color: turquoise;
           font-size: 250%; }
         header .ancho .tituloConSlogan .slogan {
           font-size: 175%; }
       header .ancho .logo img {
         width: 40%; }
-  main section div .quienesSomos {
-    border: solid 4px cornsilk; }
-    main section div .quienesSomos h3 {
-      font-size: 200%; }
-    main section div .quienesSomos p {
-      font-size: 150%; }
-  main section div .mision {
-    border: solid 4px cornsilk; }
-    main section div .mision h3 {
-      font-size: 200%; }
-    main section div .mision p {
-      font-size: 150%; }
-  main section div .vision {
-    border: solid 4px cornsilk; }
-    main section div .vision h3 {
-      font-size: 200%; }
-    main section div .vision p {
-      font-size: 150%; }
+  main .textoBase div .quienesSomos h3 {
+    font-size: 200%; }
+  main .textoBase div .quienesSomos p {
+    font-size: 150%; }
+  main .textoBase div .mision h3 {
+    font-size: 200%; }
+  main .textoBase div .mision p {
+    font-size: 150%; }
+  main .textoBase div .vision h3 {
+    font-size: 200%; }
+  main .textoBase div .vision p {
+    font-size: 150%; }
   main .tablaDeHorarios h3 {
     font-size: 200%; }
   main .tablaDeHorarios div .table {
     font-size: 125%; }
-  footer {
+  .footerIndex {
     font-size: 70%;
     gap: 0px; }
-    footer .contacto a {
+    .footerIndex .contacto a {
       font-size: 200%; }
-    footer .contacto h4 {
+    .footerIndex .contacto h4 {
       font-size: 200%; }
-    footer .contacto h6 {
+    .footerIndex .contacto h6 {
       font-size: 150%; }
-    footer .seguinos h4 {
+    .footerIndex .seguinos h4 {
       font-size: 200%; }
-    footer .seguinos img {
+    .footerIndex .seguinos img {
       width: 70px; }
-    footer .encontranos h4 {
+    .footerIndex .encontranos h4 {
       font-size: 200%; }
-    footer .encontranos h6 {
+    .footerIndex .encontranos h6 {
       font-size: 150%; }
-    footer .encontranos img {
+    .footerIndex .encontranos img {
       width: 80px; } }
 
 @media only screen and (min-width: 768px) {
@@ -269,53 +242,50 @@ footer {
       header .ancho .tituloConSlogan {
         font-size: 200%; }
         header .ancho .tituloConSlogan h1 {
-          color: turquoise;
-          font-size: 250%; }
+          font-size: 225%; }
         header .ancho .tituloConSlogan .slogan {
-          font-size: 175%; }
+          font-size: 150%; }
       header .ancho .logo img {
-        width: 30%; }
-  main section div .quienesSomos {
-    border: solid 4px cornsilk; }
-    main section div .quienesSomos h3 {
-      font-size: 200%; }
-    main section div .quienesSomos p {
-      font-size: 150%; }
-  main section div .mision {
-    border: solid 4px cornsilk; }
-    main section div .mision h3 {
-      font-size: 200%; }
-    main section div .mision p {
-      font-size: 150%; }
-  main section div .vision {
-    border: solid 4px cornsilk; }
-    main section div .vision h3 {
-      font-size: 200%; }
-    main section div .vision p {
-      font-size: 150%; }
+        width: 25%; }
+  main .textoBase div .quienesSomos h3 {
+    font-size: 200%; }
+  main .textoBase div .quienesSomos p {
+    font-size: 150%; }
+  main .textoBase div .mision h3 {
+    font-size: 200%; }
+  main .textoBase div .mision p {
+    font-size: 150%; }
+  main .textoBase div .vision h3 {
+    font-size: 200%; }
+  main .textoBase div .vision p {
+    font-size: 150%; }
   main .tablaDeHorarios h3 {
     font-size: 200%; }
   main .tablaDeHorarios div .table {
     font-size: 175%; }
-  footer {
+  main .diasHorarios .dias .apertura h3 {
+    font-size: 200%; }
+  main .diasHorarios .dias .apertura p {
+    font-size: 175%; }
+  .footerIndex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr; }
-    footer .contacto a {
+    .footerIndex .contacto a {
       font-size: 150%; }
-    footer .contacto h4 {
+    .footerIndex .contacto h4 {
       font-size: 175%; }
-    footer .contacto h6 {
+    .footerIndex .contacto h6 {
       font-size: 150%; }
-    footer .seguinos h4 {
+    .footerIndex .seguinos h4 {
       font-size: 175%; }
-    footer .seguinos img {
+    .footerIndex .seguinos img {
       width: 70px; }
-    footer .encontranos h4 {
+    .footerIndex .encontranos h4 {
       font-size: 175%; }
-    footer .encontranos h6 {
+    .footerIndex .encontranos h6 {
       font-size: 150%; }
-    footer .encontranos img {
+    .footerIndex .encontranos img {
       width: 150px; } }
 
 @media only screen and (min-width: 1024px) {
@@ -328,57 +298,673 @@ footer {
       justify-content: center;
       align-items: stretch; }
       header .ancho .tituloConSlogan {
-        flex-basis: 70%; }
+        flex-basis: 80%; }
         header .ancho .tituloConSlogan h1 {
-          color: turquoise;
           font-size: 200%; }
         header .ancho .tituloConSlogan .slogan {
           font-size: 150%; }
       header .ancho .logo {
-        flex-basis: 30%; }
+        flex-basis: 20%;
+        text-align: left; }
         header .ancho .logo img {
-          width: 40%; }
+          width: 50%; }
     header nav div {
       font-size: 125%; }
-  main section div .quienesSomos {
-    border: solid 4px cornsilk; }
-    main section div .quienesSomos h3 {
-      font-size: 200%; }
-    main section div .quienesSomos p {
-      font-size: 175%; }
-  main section div .mision {
-    border: solid 4px cornsilk; }
-    main section div .mision h3 {
-      font-size: 200%; }
-    main section div .mision p {
-      font-size: 175%; }
-  main section div .vision {
-    border: solid 4px cornsilk; }
-    main section div .vision h3 {
-      font-size: 200%; }
-    main section div .vision p {
-      font-size: 175%; }
-  main .tablaDeHorarios h3 {
+  main .textoBase div .quienesSomos h3 {
     font-size: 200%; }
-  main .tablaDeHorarios div .table {
+  main .textoBase div .quienesSomos p {
     font-size: 175%; }
-  footer {
+  main .textoBase div .mision {
+    border-right: solid 1px cornsilk; }
+    main .textoBase div .mision h3 {
+      font-size: 200%; }
+    main .textoBase div .mision p {
+      font-size: 175%; }
+  main .textoBase div .vision h3 {
+    font-size: 200%; }
+  main .textoBase div .vision p {
+    font-size: 175%; }
+  main .tablaDeHorarios {
+    overflow: auto; }
+    main .tablaDeHorarios h3 {
+      margin-top: 25px;
+      font-size: 200%; }
+    main .tablaDeHorarios div .table {
+      font-size: 175%; }
+  .footerIndex {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr; }
-    footer .contacto a {
+    .footerIndex .contacto a {
       font-size: 150%; }
-    footer .contacto h4 {
+    .footerIndex .contacto h4 {
       font-size: 175%; }
-    footer .contacto h6 {
+    .footerIndex .contacto h6 {
       font-size: 150%; }
-    footer .seguinos h4 {
+    .footerIndex .seguinos h4 {
       font-size: 175%; }
-    footer .seguinos img {
+    .footerIndex .seguinos img {
       width: 80px; }
-    footer .encontranos h4 {
+    .footerIndex .encontranos h4 {
       font-size: 175%; }
-    footer .encontranos h6 {
+    .footerIndex .encontranos h6 {
       font-size: 150%; }
-    footer .encontranos img {
+    .footerIndex .encontranos img {
       width: 150px; } }
+
+/*estilo de las paginas*/
+/*pagina rutina*/
+header .ancho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; }
+  header .ancho .titulopag {
+    flex-basis: 70%;
+    padding-top: 10px; }
+    header .ancho .titulopag h1 {
+      font-size: 125%;
+      color: #E16A04;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Vollkorn', serif;
+      animation-duration: 5s;
+      animation-name: aparecer; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  header .ancho .logopag {
+    flex-basis: 0%;
+    padding-top: 5px;
+    text-align: center; }
+    header .ancho .logopag img {
+      width: 30%; }
+
+.rutina {
+  Margin: 10px; }
+  .rutina .rutina__titulo {
+    margin: 10px;
+    color: #FF7100;
+    font-size: 100%;
+    text-align: center; }
+  .rutina .rutina__titulo--segundario {
+    text-align: center;
+    color: #FF7100;
+    font-size: 100%;
+    Margin: 10px; }
+  .rutina .rutina__texto {
+    Margin: 5px;
+    font-size: 75%;
+    line-height: 2; }
+
+.videoDefinicion {
+  text-align: center;
+  margin: 10px; }
+  .videoDefinicion .videoDef {
+    width: auto;
+    height: auto; }
+
+.volumen {
+  Margin: 10px; }
+  .volumen .volumen__titulo {
+    text-align: center;
+    color: #FF7100;
+    font-size: 100%;
+    Margin: 10px; }
+  .volumen .volumen__texto {
+    Margin: 5px;
+    font-size: 75%;
+    line-height: 2; }
+
+.videoDeVolumen {
+  text-align: center;
+  margin: 10px; }
+  .videoDeVolumen .videoVolumen {
+    width: auto;
+    height: auto; }
+
+.footerRutina {
+  background-color: darkslategray;
+  background-image: url(/img/fondo6.jpg);
+  Margin: 10px;
+  padding: 3px;
+  height: auto;
+  font-size: 100%; }
+  .footerRutina h4 {
+    text-align: center;
+    font-size: 100%; }
+  .footerRutina div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    Margin: 2px;
+    padding: 2px; }
+    .footerRutina div div {
+      display: block;
+      text-align: center; }
+      .footerRutina div div .messi__foto {
+        width: 20%; }
+      .footerRutina div div .messi__texto {
+        font-size: 75%; }
+      .footerRutina div div .dybala__foto {
+        width: 20%; }
+      .footerRutina div div .dybala__texto {
+        font-size: 75%; }
+
+/*pagina nutricion*/
+.indice {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%); }
+  .indice div h2 {
+    font-size: 100%;
+    color: #FF7100;
+    margin: 10px;
+    padding: 5px;
+    text-align: center; }
+  .indice div .detalleIndice {
+    width: 100%; }
+    .indice div .detalleIndice li {
+      line-height: 2;
+      width: 100%;
+      display: block; }
+      .indice div .detalleIndice li a {
+        font-size: 75%;
+        text-decoration: none;
+        color: white; }
+      .indice div .detalleIndice li a:hover {
+        color: orangered; }
+
+.nutricionDeportiva {
+  text-align: center; }
+  .nutricionDeportiva h2 {
+    font-size: 100%;
+    color: #FF7100;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .nutricionDeportiva .videoNutricion {
+    width: auto;
+    height: auto; }
+
+.contenidoPagNutricion .momentosDeLaNutricion {
+  Margin: 10px; }
+  .contenidoPagNutricion .momentosDeLaNutricion h2 {
+    text-align: center;
+    color: #FF7100;
+    margin: 10px;
+    padding: 5px;
+    font-size: 100%; }
+  .contenidoPagNutricion .momentosDeLaNutricion div {
+    margin-left: 10px; }
+    .contenidoPagNutricion .momentosDeLaNutricion div h3 {
+      text-align: center;
+      padding: 5px;
+      color: #FF7100;
+      font-size: 100%; }
+    .contenidoPagNutricion .momentosDeLaNutricion div p {
+      line-height: 2;
+      font-size: 75%;
+      padding: 5px; }
+
+.footerNutricion {
+  background-color: darkslategray;
+  background-image: url(/img/fondo6.jpg);
+  Margin: 10px;
+  padding: 3px;
+  height: auto;
+  font-size: 100%; }
+  .footerNutricion h4 {
+    text-align: center;
+    font-size: 100%; }
+  .footerNutricion div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    Margin: 2px;
+    padding: 2px; }
+    .footerNutricion div div {
+      display: block;
+      text-align: center; }
+      .footerNutricion div div .gaceta__foto {
+        width: 20%; }
+      .footerNutricion div div .gaceta__texto {
+        font-size: 75%; }
+      .footerNutricion div div .lopez__foto {
+        width: 20%; }
+      .footerNutricion div div .lopez__texto {
+        font-size: 75%; }
+
+/*pagina precios*/
+.precios {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; }
+  .precios .tabla {
+    flex-basis: 30%;
+    padding: 10px;
+    margin: 5px; }
+    .precios .tabla h2 {
+      font-size: 100%;
+      text-align: center;
+      color: #FF7100;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .precios .tabla .table {
+      font-size: 75%;
+      color: white;
+      text-align: center; }
+  .precios .detallePrecios {
+    padding: 10px;
+    margin: 5px;
+    flex-basis: 70%; }
+    .precios .detallePrecios h2 {
+      text-align: center;
+      padding: 10px;
+      color: #FF7100;
+      font-size: 100%; }
+    .precios .detallePrecios h4 {
+      text-align: left;
+      color: #FF7100;
+      padding: 5px;
+      margin: 10px;
+      font-size: 75%; }
+    .precios .detallePrecios p {
+      line-height: 2;
+      font-size: 75%;
+      padding: 5px;
+      margin: 10px; }
+
+.promocion {
+  margin: 10px; }
+  .promocion .promo {
+    margin: 5px;
+    padding: 2px; }
+    .promocion .promo h2 {
+      text-align: center;
+      padding: 10px;
+      color: #FF7100;
+      font-size: 100%; }
+    .promocion .promo h5 {
+      font-size: 75%; }
+    .promocion .promo p {
+      font-size: 75%; }
+
+.footerPrecio {
+  background-color: darkslategray;
+  background-image: url(/img/fondo6.jpg);
+  Margin: 10px;
+  padding: 3px;
+  height: auto;
+  font-size: 100%;
+  text-align: center; }
+  .footerPrecio img {
+    width: 20%; }
+
+/*estillo para pag formulario*/
+.formulario {
+  margin: 10px; }
+  .formulario fieldset legend {
+    color: #FF7100;
+    font-size: 100%;
+    text-align: center; }
+  .formulario fieldset div {
+    font-size: 100%;
+    margin: 20px;
+    color: ghostwhite; }
+    .formulario fieldset div .paises {
+      font-size: 100%; }
+  .formulario fieldset .enviarBorrar {
+    text-align: center; }
+    .formulario fieldset .enviarBorrar .enviarBorrar input {
+      font-size: 100%; }
+
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%; }
+    header .ancho {
+      width: 100%; }
+      header .ancho .titulopag h1 {
+        font-size: 250%;
+        margin-top: 10px; }
+      header .ancho .logopag img {
+        width: 20%; }
+  .rutina {
+    Margin: 20px; }
+    .rutina .rutina__titulo {
+      font-size: 200%;
+      margin: 10px; }
+    .rutina .rutina__titulo--segundario {
+      font-size: 200%;
+      Margin: 10px; }
+    .rutina .rutina__texto {
+      Margin: 10px;
+      font-size: 150%;
+      line-height: 2; }
+  .videoDefinicion {
+    margin: 20px; }
+    .videoDefinicion .videoDef {
+      width: 560px;
+      height: 315px; }
+  .volumen {
+    Margin: 20px; }
+    .volumen .volumen__titulo {
+      font-size: 200%;
+      Margin: 10px; }
+    .volumen .volumen__texto {
+      Margin: 10px;
+      font-size: 150%; }
+  .videoDeVolumen {
+    margin: 20px; }
+    .videoDeVolumen .videoVolumen {
+      width: 560px;
+      height: 315px; }
+  .footerRutina {
+    Margin: 20px;
+    padding: 3px;
+    height: auto; }
+    .footerRutina h4 {
+      text-align: center;
+      font-size: 150%; }
+    .footerRutina div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      Margin: 2px;
+      padding: 2px; }
+      .footerRutina div div {
+        display: block;
+        text-align: center;
+        margin: 15px; }
+        .footerRutina div div .messi__foto {
+          width: 30%; }
+        .footerRutina div div .messi__texto {
+          font-size: 125%; }
+        .footerRutina div div .dybala__foto {
+          width: 30%; }
+        .footerRutina div div .dybala__texto {
+          font-size: 125%; }
+  /*pagina nutricion*/
+  .indice {
+    width: 70%; }
+    .indice div h2 {
+      font-size: 200%;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .indice div .detalleIndice li a {
+      font-size: 150%; }
+  .nutricionDeportiva h2 {
+    font-size: 200%;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .nutricionDeportiva .videoNutricion {
+    width: 560px;
+    height: 315px; }
+  .contenidoPagNutricion .momentosDeLaNutricion {
+    Margin: 20px; }
+    .contenidoPagNutricion .momentosDeLaNutricion h2 {
+      margin: 15px;
+      padding: 10px;
+      font-size: 200%; }
+    .contenidoPagNutricion .momentosDeLaNutricion div {
+      margin-left: 15px; }
+      .contenidoPagNutricion .momentosDeLaNutricion div h3 {
+        padding: 10px;
+        font-size: 175%; }
+      .contenidoPagNutricion .momentosDeLaNutricion div p {
+        font-size: 150%;
+        padding: 10px; }
+  .footerNutricion {
+    Margin: 20px;
+    padding: 3px;
+    height: auto; }
+    .footerNutricion h4 {
+      text-align: center;
+      font-size: 150%; }
+    .footerNutricion div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      Margin: 2px;
+      padding: 2px; }
+      .footerNutricion div div {
+        display: block;
+        text-align: center;
+        margin: 15px; }
+        .footerNutricion div div .gaceta__foto {
+          width: 30%; }
+        .footerNutricion div div .gaceta__texto {
+          font-size: 125%; }
+        .footerNutricion div div .lopez__foto {
+          width: 30%; }
+        .footerNutricion div div .lopez__texto {
+          font-size: 125%; }
+  /*pagina precios*/
+  .precios {
+    margin: 15px; }
+    .precios .tabla {
+      padding: 10px;
+      margin: 10px; }
+      .precios .tabla h2 {
+        font-size: 200%; }
+      .precios .tabla .table {
+        font-size: 150%; }
+    .precios .detallePrecios h2 {
+      font-size: 200%; }
+    .precios .detallePrecios h4 {
+      font-size: 150%; }
+    .precios .detallePrecios p {
+      font-size: 150%; }
+  .promocion {
+    margin: 15px; }
+    .promocion .promo {
+      margin: 5px;
+      padding: 5px; }
+      .promocion .promo h2 {
+        font-size: 200%; }
+      .promocion .promo h5 {
+        font-size: 200%; }
+      .promocion .promo p {
+        font-size: 150%; }
+  .footerPrecio {
+    Margin: 15px;
+    padding: 5px; }
+    .footerPrecio h3 {
+      font-size: 175%;
+      padding: 5px; }
+    .footerPrecio img {
+      width: 25%; }
+  /*estillo para pag formulario*/
+  .formulario {
+    margin: 15px; }
+    .formulario fieldset legend {
+      font-size: 200%; }
+    .formulario fieldset div {
+      font-size: 150%;
+      margin: 20px; }
+      .formulario fieldset div .paises {
+        font-size: 50%; }
+    .formulario fieldset .enviarBorrar .enviarBorrar input {
+      font-size: 200%; } }
+
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 100%; }
+    header .ancho {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: stretch; }
+      header .ancho .titulopag {
+        flex-basis: 65%; }
+        header .ancho .titulopag h1 {
+          font-size: 300%;
+          margin-top: 20px; }
+      header .ancho .logopag {
+        flex-basis: 25%; }
+        header .ancho .logopag img {
+          width: 40%; }
+    header nav div {
+      font-size: 125%; }
+  .rutina {
+    Margin: 30px; }
+    .rutina .rutina__titulo {
+      font-size: 200%;
+      margin: 10px; }
+    .rutina .rutina__titulo--segundario {
+      font-size: 200%;
+      Margin: 10px; }
+    .rutina .rutina__texto {
+      Margin: 10px;
+      font-size: 175%;
+      line-height: 2; }
+  .videoDefinicion {
+    margin: 30px; }
+    .videoDefinicion .videoDef {
+      width: 560px;
+      height: 315px; }
+  .volumen {
+    Margin: 30px; }
+    .volumen .volumen__titulo {
+      font-size: 200%;
+      Margin: 10px; }
+    .volumen .volumen__texto {
+      Margin: 10px;
+      font-size: 175%; }
+  .videoDeVolumen {
+    margin: 30px; }
+    .videoDeVolumen .videoVolumen {
+      width: 560px;
+      height: 315px; }
+  .footerRutina {
+    Margin: 30px;
+    padding: 3px;
+    height: auto; }
+    .footerRutina h4 {
+      text-align: center;
+      font-size: 175%; }
+    .footerRutina div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      Margin: 2px;
+      padding: 2px; }
+      .footerRutina div div {
+        display: block;
+        text-align: center;
+        margin: 15px; }
+        .footerRutina div div .messi__foto {
+          width: 30%; }
+        .footerRutina div div .messi__texto {
+          font-size: 125%; }
+        .footerRutina div div .dybala__foto {
+          width: 30%; }
+        .footerRutina div div .dybala__texto {
+          font-size: 125%; }
+  /*pagina nutricion*/
+  .indice div h2 {
+    font-size: 200%; }
+  .indice div .detalleIndice li a {
+    font-size: 175%; }
+  .nutricionDeportiva h2 {
+    font-size: 200%; }
+  .contenidoPagNutricion .momentosDeLaNutricion h2 {
+    font-size: 200%; }
+  .contenidoPagNutricion .momentosDeLaNutricion div {
+    margin: 15px; }
+    .contenidoPagNutricion .momentosDeLaNutricion div h3 {
+      padding: 15px;
+      font-size: 200%; }
+    .contenidoPagNutricion .momentosDeLaNutricion div p {
+      font-size: 150%;
+      padding: 15px; }
+  .footerNutricion {
+    Margin: 30px;
+    padding: 3px;
+    height: auto; }
+    .footerNutricion h4 {
+      text-align: center;
+      font-size: 175%; }
+    .footerNutricion div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      Margin: 2px;
+      padding: 2px; }
+      .footerNutricion div div {
+        display: block;
+        text-align: center;
+        margin: 15px; }
+        .footerNutricion div div .gaceta__foto {
+          width: 30%; }
+        .footerNutricion div div .gaceta__texto {
+          font-size: 125%; }
+        .footerNutricion div div .lopez__foto {
+          width: 30%; }
+        .footerNutricion div div .lopez__texto {
+          font-size: 125%; }
+  /*pagina precios*/
+  .precios {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px; }
+    .precios .tabla {
+      flex-basis: 30%; }
+      .precios .tabla h2 {
+        font-size: 200%; }
+      .precios .tabla .table {
+        font-size: 150%; }
+    .precios .detallePrecios {
+      flex-basis: 70%; }
+      .precios .detallePrecios h2 {
+        font-size: 200%; }
+      .precios .detallePrecios h4 {
+        font-size: 150%; }
+      .precios .detallePrecios p {
+        font-size: 150%; }
+  .promocion {
+    margin: 20px;
+    display: flex;
+    justify-content: center; }
+    .promocion .promo {
+      width: 40%;
+      height: 20%;
+      margin: 10px;
+      padding: 10px; }
+      .promocion .promo h5 {
+        font-size: 200%; }
+      .promocion .promo p {
+        font-size: 150%; }
+  .footerPrecio {
+    Margin: 15px;
+    padding: 5px; }
+    .footerPrecio h3 {
+      font-size: 175%;
+      padding: 5px; }
+    .footerPrecio img {
+      width: 10%; }
+  /*estillo para pag formulario*/
+  .formulario {
+    margin: 20px; }
+    .formulario fieldset legend {
+      font-size: 200%; }
+    .formulario fieldset div {
+      font-size: 125%;
+      margin: 20px; }
+      .formulario fieldset div .paises {
+        font-size: 100%; }
+      .formulario fieldset div textarea {
+        width: 50%;
+        height: auto; }
+    .formulario fieldset .enviarBorrar .enviarBorrar input {
+      font-size: 200%; } }
