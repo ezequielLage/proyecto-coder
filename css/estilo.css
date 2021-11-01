@@ -46,7 +46,7 @@ header nav div {
   justify-content: center; }
 
 main .textoBase {
-  background-image: url("./img/fondo1.jpg");
+  background-image: url("/img/fondo1.jpg");
   margin: 20px; }
   main .textoBase div {
     justify-content: center; }
