@@ -6,15 +6,7 @@ main{
             justify-content: center;
             .quienesSomos{
                 h3{
-                    color: $color-titulos;
-                    margin: 10px;
-                    font-size: 100%;
-                    text-align: center;
-                    animation-name: un_efecto;
-                    animation-iteration-count:unset;
-                    animation-timing-function: ease-in;
-                    animation-duration: 2s;
-                    animation-delay: 0s;
+                    @include h3();
                 }
                 @keyframes un_efecto {
                     0%{color: white;}
@@ -23,48 +15,23 @@ main{
                     75%{color:orangered}
                 }
                 p{
-                    padding: 3px;
-                    margin: 3px;
-                    line-height: 2;
-                    font-size: 75%;
+                    @include p();
                 }
             }
             .mision{
                 h3{
-                    color: $color-titulos;
-                    margin: 10px;
-                    font-size: 100%;
-                    text-align: center;
-                    animation-name: un_efecto;
-                    animation-iteration-count:unset;
-                    animation-timing-function: ease-in;
-                    animation-duration: 2s;
-                    animation-delay: 0s;
+                    @include h3();
                 }
                 p{
-                    padding: 3px;
-                    margin: 3px;
-                    line-height: 2;
-                    font-size: 75%;
+                    @include p();
                 }
             }
             .vision{
                 h3{
-                    color: $color-titulos;
-                    margin: 10px;
-                    font-size: 100%;
-                    text-align: center;
-                    animation-name: un_efecto;
-                    animation-iteration-count:unset;
-                    animation-timing-function: ease-in;
-                    animation-duration: 2s;
-                    animation-delay: 0s;
+                    @include h3();
                 }
                 p{
-                    padding: 3px;
-                    margin: 3px;
-                    line-height: 2;
-                    font-size: 75%;
+                    @include p();
                 }
             }
         }
@@ -77,15 +44,7 @@ main{
         font-size: 75%;
         overflow: scroll;
         h3{
-            color: $color-titulos;
-            margin: 10px;
-            font-size: 100%;
-            text-align: center;
-            animation-name: un_efecto;
-            animation-iteration-count:unset;
-            animation-timing-function: ease-in;
-            animation-duration: 2s;
-            animation-delay: 0s;
+            @include h3();
         }
         div{
             .table{

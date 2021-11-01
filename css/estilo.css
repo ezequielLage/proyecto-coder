@@ -1,3 +1,4 @@
+/*Pagina Principal*/
 * {
   margin: 0;
   padding: 0;
@@ -626,6 +627,7 @@ header .ancho {
     .formulario fieldset .enviarBorrar .enviarBorrar input {
       font-size: 100%; }
 
+/*responsibe de las paginas*/
 @media only screen and (min-width: 768px) {
   header {
     width: 100%; }

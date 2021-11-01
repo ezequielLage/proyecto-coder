@@ -1,18 +1,6 @@
-$color-titulo1:#E16A04;
-$color-titulos:#FF7100;
+/*Pagina Principal*/
+@import "base";
 
-
-* {
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
- }
- body{
-    background-image: linear-gradient(to bottom,  rgb(88, 80, 80), rgb(54, 143, 151));
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
-    color: white;
-}
 @import "header";
 
 @import "main";

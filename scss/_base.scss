@@ -1,0 +1,32 @@
+$color-titulo1:#E16A04;
+$color-titulos:#FF7100;
+
+@mixin h3() {
+    color: $color-titulos;
+    margin: 10px;
+    font-size: 100%;
+    text-align: center;
+    animation-name: un_efecto;
+    animation-iteration-count:unset;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+@mixin p() {
+    padding: 3px;
+    margin: 3px;
+    line-height: 2;
+    font-size: 75%;
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+ }
+ body{
+    background-image: linear-gradient(to bottom,  rgb(88, 80, 80), rgb(54, 143, 151));
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    color: white;
+}

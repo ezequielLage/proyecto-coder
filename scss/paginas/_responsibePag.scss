@@ -1,0 +1,507 @@
+@media only screen and (min-width: 768px){
+    header{
+        width: 100%;
+        .ancho{
+            width: 100%;
+            .titulopag{
+                h1{
+                    font-size: 250%;
+                    margin-top: 10px;
+                }
+            }
+            .logopag{
+                img{
+                    width: 20%;
+                }
+            }
+        }
+    }
+    .rutina{
+        Margin:20px;
+        .rutina__titulo{
+            font-size: 200%;
+            margin: 10px;
+        }
+        .rutina__titulo--segundario{
+            font-size: 200%;
+            Margin:10px;
+        }
+        .rutina__texto{
+            Margin: 10px;
+            font-size: 150%;
+            line-height: 2;
+        }
+    }
+    .videoDefinicion{
+        margin: 20px;
+        .videoDef{
+            width:560px;
+            height: 315px;
+        }
+    }
+    .volumen{
+        Margin:20px;
+        .volumen__titulo{
+            font-size: 200%;
+            Margin:10px;
+        }
+        .volumen__texto{
+            Margin: 10px;
+            font-size: 150%;
+        }
+    }
+    .videoDeVolumen{
+        margin: 20px;
+        .videoVolumen{
+            width: 560px;
+            height: 315px;
+        }
+    }
+    .footerRutina{
+        Margin: 20px;
+        padding: 3px;
+        height: auto;
+        h4{
+            text-align: center;
+            font-size: 150%;
+        }
+        div{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            Margin: 2px;
+            padding: 2px;
+            div{
+                display: block;
+                text-align: center;
+                margin: 15px;
+                .messi__foto{
+                    width: 30%;
+                }
+                .messi__texto{
+                    font-size: 125%;
+                }     
+                .dybala__foto{
+                    width: 30%;
+                }
+                .dybala__texto{
+                    font-size: 125%;
+                }
+            }
+        }
+    }
+    /*pagina nutricion*/
+    .indice{
+        width: 70%;
+        div{ 
+            h2{
+                font-size: 200%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .detalleIndice{
+                li{
+                    a{
+                        font-size: 150%;
+                    }
+                }
+            }
+        }
+    }
+    .nutricionDeportiva{
+        h2{
+            font-size: 200%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .videoNutricion{
+            width: 560px;
+            height: 315px;
+        }
+    }
+    .contenidoPagNutricion{
+        .momentosDeLaNutricion{
+            Margin: 20px;
+            h2{
+                margin: 15px;
+                padding: 10px;
+                font-size: 200%;
+            }
+            div{
+                margin-left: 15px;
+                h3{
+                    padding: 10px;
+                    font-size: 175%;    
+                }
+                p{
+                    font-size: 150%;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .footerNutricion{
+        Margin: 20px;
+        padding: 3px;
+        height: auto;
+        h4{
+            text-align: center;
+            font-size: 150%;
+        }
+        div{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            Margin: 2px;
+            padding: 2px;
+            div{
+                display: block;
+                text-align: center;
+                margin: 15px;
+                .gaceta__foto{
+                    width: 30%;
+                }
+                .gaceta__texto{
+                    font-size: 125%;
+                }     
+                .lopez__foto{
+                    width: 30%;
+                }
+                .lopez__texto{
+                    font-size: 125%;
+                }
+            }
+        }
+    }
+    /*pagina precios*/
+    .precios{
+        margin: 15px;
+        .tabla{
+            padding: 10px;
+            margin: 10px;
+            h2{
+                font-size: 200%;
+            }
+            .table{
+                font-size: 150%;
+            }
+        }
+        .detallePrecios{
+            h2{
+                font-size: 200%; 
+            }
+            h4{
+                font-size: 150%; 
+            }
+            p{
+                font-size: 150%;
+            }
+        }
+    }
+    .promocion{
+        margin: 15px;
+        .promo{
+            margin: 5px;
+            padding: 5px;
+            h2{
+                font-size: 200%;
+            }
+            h5{
+                font-size: 200%;
+            }
+            p{
+                font-size: 150%;
+            }
+        }
+    }
+    .footerPrecio{
+        Margin: 15px;
+        padding: 5px;
+        h3{
+            font-size: 175%;
+            padding: 5px;
+        }
+        img{
+            width: 25%;
+        }
+    }
+    /*estillo para pag formulario*/
+    .formulario{
+        margin: 15px;
+        fieldset{
+            legend{
+                font-size: 200%;
+            }
+            div{
+                font-size: 150%;
+                margin: 20px;
+                .paises{
+                    font-size: 50%;
+                }
+            }
+            .enviarBorrar{
+                .enviarBorrar input{
+                    font-size: 200%;
+                }
+            }
+        } 
+    }
+}
+
+
+
+@media only screen and (min-width: 1024px){
+    header{
+        width: 100%;
+        .ancho{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: stretch;
+            .titulopag{
+                flex-basis: 65%;
+                h1{
+                    font-size: 300%;
+                    margin-top: 20px;
+                }
+            }
+            .logopag{
+                flex-basis: 25%;
+                img{
+                    width: 40%;
+                }
+            }
+        }
+        nav div{
+            font-size: 125%;
+        }
+    }
+    .rutina{
+        Margin:30px;
+        .rutina__titulo{
+            font-size: 200%;
+            margin: 10px;
+        }
+        .rutina__titulo--segundario{
+            font-size: 200%;
+            Margin:10px;
+        }
+        .rutina__texto{
+            Margin: 10px;
+            font-size: 175%;
+            line-height: 2;
+        }
+    }
+    .videoDefinicion{
+        margin: 30px;
+        .videoDef{
+            width:560px;
+            height: 315px;
+        }
+    }
+    .volumen{
+        Margin:30px;
+        .volumen__titulo{
+            font-size: 200%;
+            Margin:10px;
+        }
+        .volumen__texto{
+            Margin: 10px;
+            font-size: 175%;
+        }
+    }
+    .videoDeVolumen{
+        margin: 30px;
+        .videoVolumen{
+            width: 560px;
+            height: 315px;
+        }
+    }
+    .footerRutina{
+        Margin: 30px;
+        padding: 3px;
+        height: auto;
+        h4{
+            text-align: center;
+            font-size: 175%;
+        }
+        div{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            Margin: 2px;
+            padding: 2px;
+            div{
+                display: block;
+                text-align: center;
+                margin: 15px;
+                .messi__foto{
+                    width: 30%;
+                }
+                .messi__texto{
+                    font-size: 125%;
+                }     
+                .dybala__foto{
+                    width: 30%;
+                }
+                .dybala__texto{
+                    font-size: 125%;
+                }
+            }
+        }
+    }
+    /*pagina nutricion*/
+    .indice{
+        div{ 
+            h2{
+                font-size: 200%;
+            }
+            .detalleIndice{
+                li{
+                    a{
+                        font-size: 175%;
+                    }
+                }
+            }
+        }
+    }
+    .nutricionDeportiva{
+        h2{
+            font-size: 200%;
+        }
+    }
+    .contenidoPagNutricion{
+        .momentosDeLaNutricion{
+            h2{
+                font-size: 200%;
+            }
+            div{
+                margin:15px;
+                h3{
+                    padding: 15px;
+                    font-size: 200%;    
+                }
+                p{
+                    font-size: 150%;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+    .footerNutricion{
+        Margin: 30px;
+        padding: 3px;
+        height: auto;
+        h4{
+            text-align: center;
+            font-size: 175%;
+        }
+        div{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            Margin: 2px;
+            padding: 2px;
+            div{
+                display: block;
+                text-align: center;
+                margin: 15px;
+                .gaceta__foto{
+                    width: 30%;
+                }
+                .gaceta__texto{
+                    font-size: 125%;
+                }     
+                .lopez__foto{
+                    width: 30%;
+                }
+                .lopez__texto{
+                    font-size: 125%;
+                }
+            }
+        }
+    }
+    /*pagina precios*/
+    .precios{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: stretch;
+        margin: 20px;
+        .tabla{
+            flex-basis: 30%;
+            h2{
+                font-size: 200%;
+            }
+            .table{
+                font-size: 150%;
+            }
+        }
+        .detallePrecios{
+            flex-basis: 70%;
+            h2{
+                font-size: 200%; 
+            }
+            h4{
+                font-size: 150%; 
+            }
+            p{
+                font-size: 150%;
+            }
+        }
+    }
+    .promocion{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        .promo{
+            width: 40%;
+            height: 20%;
+            margin: 10px;
+            padding: 10px;
+            h5{
+                font-size: 200%;
+            }
+            p{
+                font-size: 150%;
+            }
+        }
+    }
+    .footerPrecio{
+        Margin: 15px;
+        padding: 5px;
+        h3{
+            font-size: 175%;
+            padding: 5px;
+        }
+        img{
+            width: 10%;
+        }
+    }
+    /*estillo para pag formulario*/
+    .formulario{
+        margin: 20px;
+        fieldset{
+            legend{
+                font-size: 200%;
+            }
+            div{
+                font-size: 125%;
+                margin: 20px;
+                .paises{
+                    font-size: 100%;
+                }
+                textarea{
+                    width: 50%;
+                    height: auto;
+                }
+            }
+            .enviarBorrar{
+                .enviarBorrar input{
+                    font-size: 200%;
+                }
+            }
+        } 
+    }
+}

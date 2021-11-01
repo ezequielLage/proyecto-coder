@@ -1,0 +1,24 @@
+.formulario{
+    margin: 10px;
+    fieldset{
+        legend{
+            color:$color-titulos;
+            font-size: 100%;
+            text-align: center;
+        }
+        div{
+            font-size: 100%;
+            margin: 20px;
+            color: ghostwhite;
+            .paises{
+                font-size: 100%;
+            }
+        }
+        .enviarBorrar{
+            text-align: center;
+            .enviarBorrar input{
+                font-size: 100%;
+            }
+        }
+    } 
+}
